@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>// Function to get the number of days in a month
+<script>
+function getDaysInMonth(month) {
+    month = month.toLowerCase(); // Convert input to lowercase for case-insensitivity
+
+    switch (month) {
+        case 'january':
+        case 'march':
+        case 'may':
+        case 'july':
+        case 'august':
+        case 'october':
+        case 'december':
+            return 31;
+        case 'april':
+        case 'june':
+        case 'september':
+        case 'november':
+            return 30;
+        case 'february':
+            return 28; // Assuming non-leap year for simplicity
+        default:
+            return 'Invalid month'; // Handle invalid input
+    }
+}
+
+// Main program
+while (true) {
+    var inputMonth = prompt('Enter a month: ');
+    if (inputMonth === null) {
+        break; // Exit the loop if the user cancels the prompt
+    }
+
+    var daysInMonth = getDaysInMonth(inputMonth);
+    var outputMessage = daysInMonth !== 'Invalid month'
+        ? `${inputMonth} has ${daysInMonth} days.`
+        : 'Invalid input. Please enter a valid month.';
+
+    console.log(outputMessage);
+}
+</script>

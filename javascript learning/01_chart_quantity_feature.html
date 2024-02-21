@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <container>
+    <div>
+        <ul type="none">
+            <li> <button onclick="console.log(`cartQuantity : ${cartQuantity}`)"
+    
+    > Show Quantity</button></li>
+    <li><button onclick=" cartQuantity=cartQuantity+1;
+    console.log(`cartQuantity: ${cartQuantity}`);"
+    > Add to chart</button></li>
+    <li> <button onclick=" cartQuantity=cartQuantity+2;
+    console.log(`cartQuantity: ${cartQuantity}`);"
+    > +2</button></li>
+    <li> <button onclick=" cartQuantity=cartQuantity+3;
+    console.log(`cartQuantity: ${cartQuantity}`);"
+    > +3</button></li>
+    <li> <button
+    onclick="cartQuantity=0;
+    console.log(` cart was empty`) "> Reset Chart</button></li>
+</ul>
+</div>
+</container>
+    <script>
+        let cartQuantity = 0;
+    </script>
+    
+</body>
+</html>
