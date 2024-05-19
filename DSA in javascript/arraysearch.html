@@ -1,0 +1,111 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search</title>
+</head>
+<body>
+    <label for="kamal">Enter element:</label>
+    <input type="text" id="kamal">
+    <button onclick="search()">Search</button>
+    <div id="result"></div>
+
+    <script>
+        // function search() {
+        //     let data = [2, 5, 4, 90, 12, 10];
+        //     let item = parseInt(document.getElementById('kamal').value);
+        //     let found = false;
+
+        //     for(let i = 0; i < data.length; i++) {
+        //         if(item === data[i]) {
+        //             alert(item + ' is in the array at index ' + i);
+        //             found = true;
+        //             break; // Exit the loop as soon as the item is found
+        //         }
+        //     }
+
+        //     if(!found) {
+        //         document.getElementById('result').textContent = 'Item not found';
+        //         exit();
+        //     }
+        // }
+    </script>
+</body>
+</html> -->
+    <!-- if 2 element exist -->
+
+  
+
+
+
+    <!-- search byfault -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search bydefault</title>
+</head>
+<body>
+    <script>
+        let data = [34,65,76,23,85,47,30];
+        let item = 85;
+        let index = undefined;
+        for( let i =0; i<data.length-1; i++){
+            if(data[i]===item){
+                idex = i;
+                // console.warn(idex);
+                break;
+
+            }
+
+        }
+        // direct
+       let k =  data.indexOf(item);
+       console.warn(data[k]);
+      
+    </script>
+    
+</body>
+</html> -->
+
+
+<!-- searching multiple element  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple same number searching</title>
+</head>
+<body>
+       <script>
+      let array = [40, 76, 40, 50, 60];
+        let el = [];
+        let fel =40 ;
+
+        // Iterate through the entire array
+        for(let i = 0; i < array.length; i++) {
+            if(fel == array[i]) {
+                el.push(i); // Store the index of the matching element
+            }
+        }
+
+        // Iterate through the stored indices and log the index and the element at that index
+        if (el.length>0){
+        for(let j = 0; j < el.length; j++) {
+            console.log(`Element ${array[el[j]]} found at index ${el[j]}`);
+        }}
+        else{
+            alert(' Enter the number which was in array.')
+        }
+ 
+    </script>
+</body>
+</html>
+
+
+
+

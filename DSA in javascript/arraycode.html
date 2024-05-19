@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Number from Array</title>
+</head>
+<body>
+    <script>
+        let number_array = [9, 8, 7, 6, 9, 5, 4, 9, 3, 9];
+        let removeNo = 3;
+
+        // Remove all occurrences of removeNo
+        let array_index = number_array.indexOf(removeNo);
+        while (array_index > -1) {
+            number_array.splice(array_index, 1);
+            array_index = number_array.indexOf(removeNo);
+        }
+
+        console.log(number_array);  // [8, 7, 6, 5, 4, 3]
+  
+
+
+// mutiple number
+
+
+    </script>
+</body>
+</html>
+
+

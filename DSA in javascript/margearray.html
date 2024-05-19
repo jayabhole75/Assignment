@@ -1,0 +1,53 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge and Sort Arrays</title>
+</head>
+<body>
+    <script>
+        //functional
+
+        // let array = [12, 34, 21, 43, 43, 56, 76, 78];
+        // let array2 = [43, 54, 87, 11, 70];
+        
+        // // Combine the two arrays
+        // let combinedArray = array.concat(array2);
+        
+        // // Sort the combined array in ascending order
+        // combinedArray.sort((a, b) => a - b);
+//   example   Given an array combinedArray = [12, 34, 21, 43, 43, 56, 76, 78, 43, 54, 87, 11, 70], let's see how the sorting works step-by-step:
+
+// The sort method starts by picking pairs of elements to compare using the comparator function.
+// For the pair (12, 34), the comparator returns 12 - 34 = -22, indicating that 12 should come before 34.
+// For the pair (34, 21), the comparator returns 34 - 21 = 13, indicating that 34 should come after 21, so they are swapped.
+// This process continues for all pairs of elements in the array.
+        // console.log(combinedArray);
+     // .......non functional......
+
+        let array = [12, 34, 21, 43, 43, 56, 76, 78];
+        let array2 = [43, 54, 87, 11, 70];
+        let data = [];
+
+        // Copy elements from array to data if they are not empty
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] !== null && array[i] !== undefined && array[i] !== "") {
+                data[data.length] = array[i];
+            }
+        }
+
+        // Copy elements from array2 to data if they are not empty
+        for (let i = 0; i < array2.length; i++) {
+            if (array2[i] !== null && array2[i] !== undefined && array2[i] !== "") {
+                data[data.length] = array2[i];
+            }
+        }
+
+        console.warn(data);
+   
+
+    </script>
+</body>
+</html>
