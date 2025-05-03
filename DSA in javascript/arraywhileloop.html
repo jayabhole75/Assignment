@@ -8,12 +8,34 @@
 <body>
     <script>
 
-let kamal1 =[23,45,67,89,90];
-let kamal2= [1,34,78,99];
+let kamal1 =[2,45,67,89,90];
+let kamal2= [7,34,77,90];
 let d1=0;
+
+
+
 let d2=0;
 let d3=0;
 let array=[];
+while(d1<kamal1.length && d2<kamal2.length){
+
+    if( kamal1[d1]<kamal2[d2]
+){
+    array[d3]=kamal1[d1++];
+
+        }else{ array[d3]=kamal2[d2++];
+
+        }
+        d3++
+    
+}
+while(d1<kamal1.length){
+    array[d3]=kamal1[d1++];
+}
+while(d2<kamal2.length){
+    array[d3]=kamal2[d2++];
+}
+console.warn(array);
 
 </script>
     
